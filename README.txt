@@ -27,13 +27,13 @@ COMMAND LINE ARGUMENTS:
 
 EXAMPLES:
 1. Process file and display words with files:
-   java -jar WordTracker.jar test1.txt -pf
+java -jar WordTracker.jar test-files/test1.txt -pf
 
 2. Process file and display words with line numbers:
-   java -jar WordTracker.jar test2.txt -pl
+java -jar WordTracker.jar test-files/test2.txt -pl
 
 3. Process file and save detailed report to file:
-   java -jar WordTracker.jar test3.txt -po -fresults.txt
+java -jar WordTracker.jar test-files/test3.txt -po
 
 FEATURES:
 - Persistent storage using repository.ser file
@@ -112,3 +112,4 @@ TECHNICAL NOTES:
 VERSION: 1.0
 COMPATIBILITY: Java 8+
 AUTHOR: SAIT CPRG 304 Assignment 3
+MEMBER: Rhailyn Cona, Komalpreet Kaur, Anne Marie Ala, Samuel Braun, Abel Fekadu
