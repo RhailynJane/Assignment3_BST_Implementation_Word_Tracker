@@ -1,0 +1,3 @@
+This is Assignment three of object oriented programming.
+We have learned data structures using java.
+Array and linked list are linear data structures.

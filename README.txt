@@ -58,18 +58,26 @@ DATA PERSISTENCE:
 
 OUTPUT FORMATS:
 1. -pf (Print Files):
-   word1                Files: file1.txt, file2.txt
-   word2                Files: file1.txt
+   Lists all words in alphabetical order with the files in which they occur.
+   Each line is formatted as:
+   Key = ===word=== found in file: filename1, filename2, ...
 
 2. -pl (Print Lines):
-   word1
-       file1.txt        Lines: [1, 5, 10]
-       file2.txt        Lines: [2, 7]
+   Lists all words in alphabetical order with the files and line numbers of occurrences.
+   Each line is formatted as:
+   Key = ===word=== found in file: filename on lines: line1, line2, ...
 
 3. -po (Print Occurrences):
-   word1                (Total Frequency: 5)
-       file1.txt        Lines: [1, 5, 10]        Frequency: 3
-       file2.txt        Lines: [2, 7]            Frequency: 2
+   Lists all words in alphabetical order with the total frequency, files, line numbers, and frequency per file.
+   Each line is formatted as:
+   ===word=== number of entries: total_frequency
+   found in file: filename
+   on lines: line1, line2, ...
+   frequency in file: n
+
+
+Note: The actual output format may vary slightly but includes all relevant information: word, total frequency, files, and line numbers.
+
 
 ERROR HANDLING:
 - Invalid command line arguments will display usage information
