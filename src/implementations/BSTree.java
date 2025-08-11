@@ -4,17 +4,25 @@ import utilities.BSTreeADT;
 import utilities.Iterator;
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
+import java.io.Serializable;
 
-public class BSTree<E extends Comparable<? super E>> implements BSTreeADT<E> {
+public class BSTree<E extends Comparable<? super E>> implements BSTreeADT<E>, Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     // Attributes
     private BSTreeNode<E> root;
     private int size;
 
-    // Constructor
+    // Constructors
     public BSTree() {
         this.root = null;
         this.size = 0;
+    }
+
+    public BSTree(E element) {
+        this.root = new BSTreeNode<E>(element);
+        this.size = 1;
     }
 
     @Override

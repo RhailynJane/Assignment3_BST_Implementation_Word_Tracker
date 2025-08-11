@@ -1,11 +1,15 @@
 package implementations;
 
+import java.io.Serializable;
+
 /**
  * BSTreeNode represents a single node in a Binary Search Tree
  *
  * @param <E> The type of data stored in this node
  */
-public class BSTreeNode<E> {
+public class BSTreeNode<E> implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     // Attributes
     private E data;                    // The actual data stored in this node
@@ -41,6 +45,14 @@ public class BSTreeNode<E> {
      * @return the data stored in this node
      */
     public E getData() {
+        return data;
+    }
+
+    /**
+     * Gets the element stored in this node (alias for getData)
+     * @return the element stored in this node
+     */
+    public E getElement() {
         return data;
     }
 
